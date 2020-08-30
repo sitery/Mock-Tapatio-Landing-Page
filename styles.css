@@ -1,0 +1,795 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Salsa", cursive;
+  max-width: 100%;
+}
+
+/* Main Title Container */
+
+.headercontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: url(Images/chillibackground.png) no-repeat;
+  background-size: cover;
+  z-index: -5;
+}
+
+.maintitle {
+  font-size: 5rem;
+  position: relative;
+  margin-left: -40rem;
+  transform: skewy(-2deg);
+  color: #ed1b2e;
+  line-height: 1;
+  z-index: 3;
+  opacity: 0.9;
+}
+
+.hashtag {
+  text-shadow: 2px 4px #000000;
+}
+
+.bottlepic {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.7;
+  transform: rotate(60deg);
+  margin-right: -7rem;
+}
+
+/* Main Video */
+
+.followvideo {
+  display: block;
+  height: 300px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Call to Action */
+
+.videolinkcontainer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: white;
+  font-size: 4rem;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 10em;
+  background-color: #ed1b2e;
+  text-shadow: 2px 1px #000000;
+  transform: skewy(-2deg);
+  height: 100px;
+  text-decoration: none;
+}
+
+/* Phone Video and outer calls */
+
+.InstagramPhone {
+  height: 160vh;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "box2 box3 box5"
+    "box4 box3 box1";
+  background-color: #F9F9F9;
+  }
+
+/* Main Reasons out calls */
+
+.Share {
+  grid-area: box1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px;
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  border-radius: 800px;
+  color: #ffffff;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.Share h1 {
+  color: #ed1b2e;
+  position: absolute;
+  margin-top: 140px;
+  font-size: 7.5rem;
+  text-shadow: 2px 3px #000000;
+  z-index: 1;
+  transform: skewy(-5deg);
+}
+
+.fab {
+  font-size: 9rem;
+}
+
+.Dash {
+  grid-area: box2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Dash img {
+  width: 380px;
+  height: 380px;
+  border-radius: 800px;
+}
+
+.Dash h1 {
+  color: #ed1b2e;
+  position: absolute;
+  margin-top: 250px;
+  font-size: 8rem;
+  text-shadow: 2px 3px #000000;
+  z-index: 1;
+  transform: skewy(-5deg);
+}
+
+.VideoBox {
+  display: flex;
+  align-items: center;
+  grid-area: box3;
+  display: flex;
+  justify-content: center;
+}
+
+.Repeat {
+  grid-area: box4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Repeat img {
+  width: 380px;
+  height: 380px;
+  border-radius: 800px;
+}
+
+.Repeat h1 {
+  color: #ed1b2e;
+  position: absolute;
+  margin-top: 250px;
+  font-size: 7rem;
+  text-shadow: 2px 3px #000000;
+  z-index: 1;
+  transform: skewy(-5deg);
+}
+
+.Eat {
+  grid-area: box5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Eat img {
+  width: 380px;
+  height: 380px;
+  border-radius: 800px;
+  transform: skewy(-2deg);
+}
+
+.Eat h1 {
+  color: #ed1b2e;
+  position: absolute;
+  margin-top: 250px;
+  font-size: 8rem;
+  text-shadow: 2px 3px #000000;
+  z-index: 1;
+  transform: skewy(-5deg);
+}
+
+/* Responsive design Portrait Orientation */
+
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  
+  .headercontainer {
+    width: 1024px;
+  }
+
+  .followvideo {
+    width: 1024px;
+  }
+  
+  .videolinkcontainer a {
+    width: 1024px;
+  }
+
+  .maintitle {
+    font-size: 3rem;
+    margin-left: -40rem;
+  }
+
+  .bottlepic {
+    margin-right: -7rem;
+  }
+
+  .bottlepic img {
+    width: 130px;
+  }
+
+  .InstagramPhone {
+    height: 100vh;
+  }
+
+  .Share {
+    padding: 100px;
+  }
+  
+  .Share h1 {
+    font-size: 5rem;
+  }
+  
+  .Dash img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .Dash h1 {
+    font-size: 6rem;
+  }
+  
+  .Repeat img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .Repeat h1 {
+    font-size: 6rem;
+  }
+
+  .Eat img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .Eat h1 {
+    font-size: 6rem;
+  }
+
+  .InstagramPhone {
+    width: 1024px;
+  }
+
+
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  
+  .maintitle {
+    font-size: 2.8rem;
+    margin-left: -20rem;
+  }
+
+  .bottlepic {
+    margin-right: -7rem;
+  }
+
+  .bottlepic img {
+    width: 120px;
+  }
+
+  .videolinkcontainer a {
+    font-size: 2em;
+    height: 50px;
+    top: 21.1em;
+    border: 2px solid #000000;
+  }
+
+  .InstagramPhone {
+    height: 90vh;
+  }
+
+  .Share {
+    padding: 80px;
+  }
+  
+  .Share h1 {
+    font-size: 4rem;
+  }
+  
+  .Dash img {
+    width: 230px;
+    height: 230px;
+  }
+  
+  .Dash h1 {
+    font-size: 4rem;
+  }
+  
+  .Repeat img {
+    width: 230px;
+    height: 230px;
+  }
+  
+  .Repeat h1 {
+    font-size: 4rem;
+  }
+
+  .Eat img {
+    width: 230px;
+    height: 230px;
+  }
+  
+  .Eat h1 {
+    font-size: 4rem;
+  }
+
+  .fab {
+    font-size: 5rem;
+  }
+
+  .VideoBox video {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 450px) and (orientation: portrait) {
+  
+  .maintitle {
+    font-size: 2rem;
+    margin-left: -10rem;
+  }
+
+  .bottlepic {
+    margin-right: -7rem;
+  }
+
+  .bottlepic img {
+    width: 80px;
+  }
+
+
+  .InstagramPhone {
+    height: 80vh;
+  }
+
+  .followvideo {
+    width: 450px;
+    height: 200px;
+  }
+
+  .videolinkcontainer a {
+    font-size: 1.8rem;
+    top: 20em;
+    height: 50px;
+    width: 450px;
+  }
+
+  .Share {
+    padding: 28px;
+  }
+  
+  .Share h1 {
+    font-size: 2rem;
+    margin-top: 45px;
+    text-shadow: 1px 2px #000000;
+  }
+  
+  .Dash img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .Dash h1 {
+    font-size: 2rem;
+    margin-top: 90px;
+    text-shadow: 1px 2px #000000;
+  }
+  
+  .Repeat img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .Repeat h1 {
+    font-size: 2rem;
+    margin-top: 90px;
+    text-shadow: 1px 2px #000000;
+  }
+
+  .Eat img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .Eat h1 {
+    font-size: 2rem;
+    margin-top: 90px;
+    text-shadow: 1px 2px #000000;
+  }
+
+  .fab {
+    font-size: 3rem;
+  }
+
+}
+
+@media only screen and (max-width: 425px) and (orientation: portrait) {
+
+  .headercontainer {
+    width: 425px;
+    height: 180px;
+  }
+
+  .maintitle {
+    font-size: 2rem;
+    margin-left: -10rem;
+  }
+
+  .bottlepic {
+    margin-right: -7rem;
+  }
+
+  .bottlepic img {
+    width: 80px;
+  }
+
+  .followvideo {
+    width: 425px;
+    height: 200px;
+  }
+
+  .videolinkcontainer a {
+    font-size: 1.8rem;
+    top: 12em;
+    height: 50px;
+    width: 425px;
+  }
+
+  .InstagramPhone {
+    height: 80vh;
+    width: 425px;
+  }
+
+  .Share {
+    padding: 28px;
+  }
+  
+  .Share h1 {
+    font-size: 2rem;
+    margin-top: 45px;
+    text-shadow: 1px 2px #000000;
+  }
+  
+  .Dash img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .Dash h1 {
+    font-size: 2rem;
+    margin-top: 90px;
+    text-shadow: 1px 2px #000000;
+  }
+  
+  .Repeat img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .Repeat h1 {
+    font-size: 2rem;
+    margin-top: 90px;
+    text-shadow: 1px 2px #000000;
+  }
+
+  .Eat img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .Eat h1 {
+    font-size: 2rem;
+    margin-top: 90px;
+    text-shadow: 1px 2px #000000;
+  }
+
+  .fab {
+    font-size: 3rem;
+  }
+
+  .VideoBox video {
+    width: 120px;
+  }
+
+}
+
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .headercontainer {
+    width: 414px;
+  }
+
+  .followvideo {
+    width: 414px;
+  }
+  
+  .videolinkcontainer a {
+    width: 414px;
+  }
+  
+  .InstagramPhone {
+    width: 414px;
+    height: 80vh;
+  }
+
+}
+
+@media only screen and (max-width: 375px) and (orientation: portrait) {
+  
+  .headercontainer {
+    width: 375px;
+  }
+
+  .followvideo {
+    width: 375px;
+  }
+  
+  .videolinkcontainer a {
+    width: 375px;
+  }
+  
+  .InstagramPhone {
+    width: 375px;
+  }
+  
+  .bottlepic img {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  
+  .maintitle {
+    margin-left: -5rem;
+  }
+
+  .videolinkcontainer a {
+    font-size: 1.3rem;
+    top: 15em;
+    height: 40px;
+  }
+
+  .InstagramPhone {
+    height: 80vh;
+  }
+  
+  .bottlepic img {
+    width: 50px;
+  }
+
+  .followvideo {
+    height: 150px;
+  }
+
+  .Share {
+    padding: 24px;
+  }
+  
+  .Share h1 {
+    font-size: 1.8rem;
+    margin-top: 48px;
+  }
+  
+  .Dash img {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .Dash h1 {
+    font-size: 1.8rem;
+    margin-top: 90px;
+  }
+  
+  .Repeat img {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .Repeat h1 {
+    font-size: 1.8rem;
+    margin-top: 90px;
+  }
+
+  .Eat img {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .Eat h1 {
+    font-size: 1.8rem;
+    margin-top: 90px;
+  }
+
+  .fab {
+    font-size: 3rem;
+  }
+
+  .VideoBox video {
+    width: 100px;
+  }
+}
+
+/* Responsive design Lnadscape Orientation*/
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  
+  .headercontainer {
+    width: 1024px;
+  }
+
+  .maintitle {
+    margin-left: -28rem;
+  }
+
+  .followvideo {
+    width: 1024px;
+  }
+  
+  .videolinkcontainer a {
+    width: 1024px;
+    top: 10em;
+    height: 100px;
+  }
+  
+  .Share {
+    padding: 90px;
+  }
+  
+  .Share h1 {
+    font-size: 6rem;
+  }
+  
+  .fab {
+    font-size: 9rem;
+  }
+  
+  .Dash img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .Dash h1 {
+    font-size: 7rem;
+  }
+  
+  .Repeat img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .Repeat h1 {
+    font-size: 6rem;
+  }
+  
+  .Eat img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .Eat h1 {
+    font-size: 7rem;
+  }
+
+  .InstagramPhone {
+    width: 1024px;
+    height: 125vh;
+  }
+  
+
+}
+
+@media only screen and (max-width: 823px) and (orientation: landscape) {
+  
+  .maintitle {
+    margin-left: -10rem;
+  }
+
+  .videolinkcontainer a {
+    font-size: 2em;
+    height: 50px;
+    top: 21.1em;
+    border: 2px solid #000000;
+  }
+
+  .Share {
+    padding: 60px;
+  }
+  
+  .Share h1 {
+    font-size: 3rem;
+    margin-top: 100px;
+  }
+  
+  .fab {
+    font-size: 6rem;
+  }
+  
+  .Dash img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .Dash h1 {
+    font-size: 3rem;
+    margin-top: 180px;
+  }
+  
+  .Repeat img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .Repeat h1 {
+    font-size: 3rem;
+    margin-top: 180px;
+  }
+  
+  .Eat img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .Eat h1 {
+    font-size: 4rem;
+    margin-top: 180px;
+  }
+
+  .InstagramPhone {
+    height: 180vh;
+  }
+
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+  
+  .maintitle {
+    margin-left: -3rem;
+  }
+
+  .videolinkcontainer a {
+    font-size: 3rem;
+    top: 14em;
+  }
+
+  .bottlepic img {
+    width: 80px;
+  }
+
+  .InstagramPhone {
+    height: 210vh;
+  }
+
+
+}
+
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+
+  .maintitle {
+    margin-left: -4rem;
+  }
+
+  .bottlepic img {
+    width: 80px;
+  }
+
+  .InstagramPhone {
+    height: 210vh;
+  }
+
+}
